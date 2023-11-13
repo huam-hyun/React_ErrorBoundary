@@ -1,7 +1,7 @@
 // 함수형 컴포넌트에 없는 기능을 추가하기 위해 클래스형 컴포넌트로 선언합니다.
 import React from "react"
 
-export default class ErrorBoundary extends React.Component {
+export default class ChildErrorBoundary extends React.Component {
   constructor(props) {
     super(props)
 
@@ -19,7 +19,7 @@ export default class ErrorBoundary extends React.Component {
   }
 
   componentDidCatch(error, info) {
-    console.log('handle side-effect in here')
+    console.log('error catched by ChildErrorBoundary')
     console.log(info)
   }
 
