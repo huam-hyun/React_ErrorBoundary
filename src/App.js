@@ -1,11 +1,14 @@
-import Counter from './components/Counter'
-import './App.css'
+import Sample1 from './sample/sample1'
+
+import './sample/sample.css'
 
 function App() {
   return (
-    <div>
+    <div className='content'>
       <h2>Test ErrorBoundary</h2>
-      <Counter />
+      <hr />
+      <Sample1 />
+      <hr />
     </div>
   )
 }
