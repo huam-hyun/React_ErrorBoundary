@@ -1,9 +1,7 @@
 import React from "react"
 
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary"
-import ChildErrorBoundary from "../components/ErrorBoundary/ChildErrorBoundary"
 import Counter from "../components/Counter/Counter"
-import ChildCounter from "../components/Counter/ChildCounter"
 
 const Sample1 = () => {
 
@@ -17,9 +15,9 @@ const Sample1 = () => {
       </div>
       <div>
         <h3>second counter</h3>
-        <ChildErrorBoundary>
-          <ChildCounter />
-        </ChildErrorBoundary>
+        <ErrorBoundary>
+          <Counter />
+        </ErrorBoundary>
       </div>
     </div>
   )
