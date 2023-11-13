@@ -6,7 +6,7 @@ import Counter from "../components/Counter/Counter"
 const Sample1 = () => {
 
   return (
-    <div className='sample--first'>
+    <div className='sample'>
       {/* 각각 개별로 ErrorBoundary가 적용이 된다. */}
       {/* ErrorBoundary는 현재 child에 적용된 컴포넌트에 적용되고, 가장 가까운 ErrorBoundary를 만나게 되면 상위로 더 이상 에러가 전달되지 않는다 */}
       <div>
